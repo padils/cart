@@ -1,0 +1,22 @@
+.div{
+    background-color: wheat;
+    padding-left: 50px;
+    padding-top: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.icon{
+    text-align: right;
+   
+}
+.button{
+    text-align: left;
+}
+.img{
+    text-align: right;
+}
+.total{
+    text-align: center;
+}
+

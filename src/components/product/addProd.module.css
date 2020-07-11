@@ -1,0 +1,24 @@
+.all{
+    background-color: wheat;
+    
+}
+
+
+.img img:hover {
+    border: 2px solid blue;
+    cursor: pointer;
+    
+    
+}
+.div{
+    text-align: center;
+    margin: 10px;
+    
+}
+.cursor{
+    
+}
+
+input{
+    width: 100%;
+}
