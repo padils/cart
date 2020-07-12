@@ -1,26 +1,10 @@
 
-const SET_ITEM = `SET_ITEM`;
-const SET_AMOUNT = `SET_AMOUNT`;
-const DELETE_I = `DELETE_I`;
-
-
-
-let initialState =
-{
-   
-    Items:[]
-
-}
-
-const AddProductRed = (state = initialState, action) => {
+const reducer = (state , action) => {
 
 
 
     switch (action.type) {
-
-
-
-        case SET_ITEM:
+      case `ITEM`:
 
             return {
 
@@ -28,7 +12,7 @@ const AddProductRed = (state = initialState, action) => {
                 Items:[ ...state.Items,{...action.Items}]
                 
             }
-        case SET_AMOUNT:
+        case `AMOUNT`:
 
             return {
 
@@ -44,14 +28,9 @@ const AddProductRed = (state = initialState, action) => {
                         return i
                         
                     })
-                
-                
-                           
-                
-        
-                
+               
             }
-        case DELETE_I:
+        case `DELETE`:
 
             return {
 
@@ -66,11 +45,6 @@ const AddProductRed = (state = initialState, action) => {
 
 };
 
-export const setProdName = (Items) => ({ type: SET_ITEM,Items });
-export const setAmount = (amount,id) => ({ type: SET_AMOUNT,amount,id });
-export const deleteI = (id) => ({ type: DELETE_I,id });
+export default reducer
 
 
-
-
-export default AddProductRed

@@ -1,24 +1,25 @@
-import React, { useState } from 'react';
-import { Button } from 'react-bootstrap';
+import React from 'react';
 
-let   Amount =(props) =>{
-
+let Amount = (props) => {
 
 
 
 
-    return(<div>
+
+
+    return (<div>
 
         <div>
-       
-            <Button className='btn btn-dark' onClick={props.nextAmount}>+</Button>
 
-                {props.amount}
+            <button width='50px' className='btn btn-dark' disabled={props.amount === 1} onClick={props.backAmount}>-</button>
 
-            <Button className='btn btn-dark' disabled={props.amount===1} onClick={props.backAmount}>-</Button>
+            {props.amount}
+
+
+            <button className='btn btn-dark' onClick={props.nextAmount}>+</button>
         </div>
 
-      
+
     </div>
     )
 }
