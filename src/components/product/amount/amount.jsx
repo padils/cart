@@ -2,21 +2,25 @@ import React from 'react';
 
 let Amount = (props) => {
 
-
-
-
-
-
     return (<div>
 
         <div>
+            <button
+            style={{
+                width:'40px'
+            }}
+            className='btn btn-dark'
+            disabled={props.amount === 1} 
+            onClick={props.backAmount}>-</button>
 
-            <button width='50px' className='btn btn-dark' disabled={props.amount === 1} onClick={props.backAmount}>-</button>
+        <span>{props.amount}</span>
 
-            {props.amount}
-
-
-            <button className='btn btn-dark' onClick={props.nextAmount}>+</button>
+            <button
+             style={{
+                width:'40px'
+            }}
+            className='btn btn-dark' 
+            onClick={props.nextAmount}>+</button>
         </div>
 
 

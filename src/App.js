@@ -2,14 +2,11 @@ import React from 'react';
 import './App.css';
 import AddProd from './components/product/addProd';
 
-let App=(porps) =>{
+let App = (porps) => {
   return (
-    
-       
-          <div >
-           <AddProd/>
-          </div>
-     
+    <div >
+      <AddProd />
+    </div>
   );
 }
 

@@ -1,14 +1,10 @@
 .div{
     background-color: wheat;
-    
-    
     margin: 10px;
     text-align: center;
 }
-
 .icon{
     text-align: right;
-   
 }
 .button{
     text-align: left;
