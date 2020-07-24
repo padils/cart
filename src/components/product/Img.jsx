@@ -11,11 +11,7 @@ let Img = (props) => {
             props.editImg(props.img);
         }}
          src={props.img} />
-
-
     )
 }
-
-
 
 export default Img
